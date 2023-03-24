@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('D:\\Users\\User\\keystores\\bou\\bounce_simulator_key.jks')
+            storePassword '{key155455$5808}'
+            keyAlias 'key'
+            keyPassword 'key155455'
+        }
+    }
+    namespace 'com.example.morgen'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.morgen"
+        minSdk 26
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk 33
+        versionCode 1
+        versionName "2.2.1"
+        applicationIdSuffix ".no_ad"
+        versionNameSuffix "-no_ad"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+    buildToolsVersion '30.0.3'
+    flavorDimensions
+}
+
+dependencies {
+    implementation "androidx.fragment:fragment:1.5.5"
+    implementation 'com.yandex.android:mobileads:5.6.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

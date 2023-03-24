@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Morgen"
+        tools:ignore="DataExtractionRules"
+        tools:targetApi="33">
+        <activity
+            android:name=".BounceSimulator"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".BounceVideo"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Morgen" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Morgen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7371028998353851~9042624185" />
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bounce Simulator</string>
+    <string name="playButton_text">Играть\n( С клипом)</string>
+    <string name="appIntroText">Bounce симулятор</string>
+    <string name="play_sim_button">Играть ( Симулятор )</string>
+    <string name="bounce_points_text">Bounce:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

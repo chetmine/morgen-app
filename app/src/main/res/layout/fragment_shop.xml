@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    tools:context=".ShopFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:backgroundTintMode="screen"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/white_background"
+            android:tint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/shortvid"
+            android:layout_width="290dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#8C8C8C"
+            android:backgroundTintMode="src_over"
+            android:contentDescription="short intro"
+            android:scaleType="centerInside"
+            android:src="@drawable/small_video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/longvid"
+            android:layout_width="290dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#009688"
+            android:backgroundTintMode="screen"
+            android:contentDescription="long intro"
+            android:scaleType="centerInside"
+            android:src="@drawable/long_video"
+            android:tint="#BF000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/watch_ad"
+            android:layout_width="184dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#009688"
+            android:backgroundTintMode="screen"
+            android:contentDescription="@string/bounce_points_text"
+            android:scaleType="centerInside"
+            android:src="@drawable/watch_ad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/long_video_status_button"
+            android:layout_width="290dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="184dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="vid2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/locked_long_video_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/short_video_status_button"
+            android:layout_width="290dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="184dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:backgroundTintMode="add"
+            android:contentDescription="vid1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/locked_long_video_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/watch_ad_button"
+            android:layout_width="290dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:backgroundTintMode="add"
+            android:contentDescription="ad1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/watch_ad_button"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/watch_ad" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
